@@ -1,16 +1,116 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>LeanEngine</title>
-<link rel="stylesheet" href="/stylesheets/style.css" />
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style/common.css">
+	<link rel="stylesheet" type="text/css" href="style/content.css">
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
 </head>
 <body>
-    <h1>易宝支付</h1>
-    <p>易宝支付-Payplus</p>
-    <!--
-    <p><a href="/time">一个简单的动态路由示例</a></p>
-    <p><a href="/todos">一个简单的「TODO 列表」示例</a></p>
-    -->
+<!--header-->
+<div class="header">
+	<div class="head-bg index"></div>
+	<div class="head clear">
+		<a class="logo" href=""></a>
+		<ul class="nav clear">
+			<li class="nav-child"><a href="" target="_blank" class="nav-child-a active">首页</a></li>
+			<li class="nav-child">
+				<a href="" target="_blank" class="nav-child-a">开发者中心</a>
+				<div class="menu-nav">
+					<a href="" target="_blank">接入指南<span class="iconfont">&#xe601;</span></a>
+					<a href="" target="_blank">API文档<span class="iconfont">&#xe601;</span></a>
+					<a href="" target="_blank">SDK下载<span class="iconfont">&#xe601;</span></a>
+				</div>
+			</li>
+			<li class="nav-child"><a href="" target="_blank" class="nav-child-a">帮助中心</a></li>
+			<li class="nav-child"><a href="" target="_blank" class="nav-child-a">关于我们</a></li>
+			<li class="nav-child"><a href="" target="_blank" class="nav-child-a">联系我们</a></li>
+		</ul>
+		<a class="login-btn">登录</a>
+	</div>
+	<div class="slider" id="slider">
+		<ul class="sliderbox">
+			<li style="background: url('images/lb-img1.png') no-repeat top center"></li>
+			<li style="background: url('images/lb-img1.png') no-repeat top center"></li>
+			<li style="background: url('images/lb-img1.png') no-repeat top center"></li>
+			<li style="background: url('images/lb-img1.png') no-repeat top center"></li>
+		</ul>
+		<ul class="slidernav"></ul>
+	</div>
+</div>
+<!--main-->
+<div class="block white bg1">
+	<div class="layout block-table">
+		<div class="block-text">
+			<h3 class="title">合规的支付账户，满足商户用户需求</h3>
+			<p>依托于易宝支付的账户能力，为商户提供基本的虚拟账户，为商户的会员提供应用内的合规账户，会员能够进行基本的充值、提现、转账、余额支付等活动，以及围绕账户进行营销、金融等增值活动。</p>
+		</div>
+	</div>
+	<span class="horn iconfont">&#xe600;</span>
+</div>
+<div class="block blue bg1">
+	<div class="layout block-table">
+		<div class="block-text">
+			<h3 class="title">聚合主流支付渠道，为商户快速接入支付</h3>
+			<p>1.提供账户余额支付、银行卡支付</p>
+			<p>2.聚合微信支付、支付宝支付等其他主流第三方支付渠道，使支付变得更加快捷简单</p>
+			<p>3.账户和支付解耦合，支持和商户现有支付渠道兼容并行</p>
+		</div>
+	</div>
+	<span class="horn iconfont">&#xe600;</span>
+</div>
+<div class="block white bg2">
+	<div class="layout block-table">
+			<div class="block-text">
+			<h3 class="title">丰富的营销工具，帮助商户促成交易</h3>
+			<p>提供卡券、红包等多种营销手段，打通营销和资金账户体系，减少商户建设和维护成本</p>
+		</div>
+	</div>
+	<span class="horn iconfont">&#xe600;</span>
+</div>
+<div class="block blue bg2">
+	<div class="layout block-table">
+		<div class="block-text">
+			<h3 class="title">资金清结算服务，快速处理多级商户间复杂的资金关系</h3>
+			<p>收上来的钱不知道怎么分？钱麦为您分忧解难，我们拥有多级商户关系模型，支持多级商户间复杂资金关系的处理，自动处理资金分账问题，提高效率</p>
+		</div>
+	</div>
+	<span class="horn iconfont">&#xe600;</span>
+</div>
+<!--产品优势-->
+<div class="layout product">
+	<h3 class="title">产品优势</h3>
+	<ul class="product-list">
+		<li>
+			<span class="bg1"></span>
+			<h4>可插拔</h4>
+			<p>各产品之间不耦合，商家可根据实际需求选择合适的产品进行接入。</p>
+		</li>
+		<li>
+			<span class="bg2"></span>
+			<h4>对接快速</h4>
+			<p>提供API和SDK多种接入模式，帮助商户快速接入。</p>
+		</li>
+		<li>
+			<span class="bg3"></span>
+			<h4>节约成本</h4>
+			<p>为商户提供交易从开始到结束的链式服务，节约商户自行开发成本。</p>
+		</li>
+		<li>
+			<span class="bg4"></span>
+			<h4>安全可靠</h4>
+			<p>数据传输和存储经过算法加密，通信安全有保障。</p>
+		</li>
+	</ul>
+</div>
+<!--footer-->
+<div class="footer">
+	<p>© 2003-2016  易宝支付有限公司版权所有</p>
+	<p>京ICP证030831号  京ICP备08100193号-1  京公网安备11010502007599号</p>
+	<p>7*24小时客服热线：4001-500-800    客服/投诉中心地址：石景山区鲁谷路74号瑞达大厦16层</p>
+</div>
+<script type="text/javascript" src="js/power-slider.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
