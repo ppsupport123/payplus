@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style/common.css">
+	<link rel="stylesheet" type="text/css" href="style/content.css">
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+</head>
+<body class="body-bg">
+<!--header-->
+<div class="header">
+	<div class="head-bg"></div>
+	<div class="head clear">
+		<a class="logo" href="">钱 麦</a>
+		<ul class="nav clear">
+			<li class="nav-child"><a href="index.html" target="_blank" class="nav-child-a">首页</a></li>
+			<li class="nav-child">
+				<a target="_blank" class="nav-child-a active">开发者中心</a>
+				<div class="menu-nav">
+					<a href="accessGuide.html" target="_blank">接入指南<span class="iconfont">&#xe601;</span></a>
+					<a href="" target="_blank">API文档<span class="iconfont">&#xe601;</span></a>
+					<a href="SDK-download.html" target="_blank">SDK下载<span class="iconfont">&#xe601;</span></a>
+				</div>
+			</li>
+			<li class="nav-child"><a href="helpCenter.html" target="_blank" class="nav-child-a">帮助中心</a></li>
+			<li class="nav-child"><a href="aboutUs.html" target="_blank" class="nav-child-a">关于我们</a></li>
+			<li class="nav-child"><a href="contactUs.html" target="_blank" class="nav-child-a">联系我们</a></li>
+		</ul>
+		<a class="login-btn">登录</a>
+	</div>
+</div>
+<!--banner-->
+<div class="layout banner"><img src="images/banner-img2.jpg"></div>
+<!--main-->
+<div class="layout main">
+	<div class="guide">
+		<div class="guide-nav">
+			<h2 class="content-title">接入指南</h2>
+			<p><a href="#pt-1">快速入门</a><span></span></p>
+			<p><a href="#pt-2">开通流程</a><span></span></p>
+			<p><a href="#pt-3">对接准备</a><span></span></p>
+			<p><a href="#pt-4">接入SDK</a><span></span></p>
+			<p><a href="#pt-5">在线调试</a><span></span></p>
+		</div>
+		<div class="guide-content">
+			<div class="section" id="pt-1">
+				<h4>快速入门</h4>
+				<p>支付+是面向企业提供的支付、账户、账务及营销的综合解决方案产品, 非常抱歉，暂时不对个人提供服务。</p>
+			</div>
+			<div class="section" id="pt-2">
+				<h4>开通流程</h4>
+				<div class="section-img"><img src="images/section-img.jpg"></div>
+				<p class="point c-646464">入网申请</p>
+				<p class="s-p mt10">准备入网资料，提交入网申请，具体可联系支付+商务；</p>
+				<p class="s-p">联系方式：<span>TEL电话：010-57073973</span><br><span class="bf">E-MAIL电邮：<a href="mailto:ppsupport@yeepay.com">ppsupport@yeepay.com</a></span><br><span class="bf">微信公众号：Xiangzhujd</span></p>
+				<p class="point c-646464">联调测试：</p>
+				<p class="s-p mt10">对于已确认合作意向的商户，可以同步开启YeePay Plus的技术对接联调。联调测试所需的测试AppKey和AppSecret可以按照上述联系方式，联系支付+商务人员。在调试过程中所遇到任何问题，可以查看帮助中心或按照联系技术支持。</p>
+				<p class="s-p">为提升支付+商户标准化、自动化对接，欢迎您反馈在接入过程中遇到的问题或提出意见或反馈，期待您的参与！</p>
+				<p class="point c-646464">产品开通：</p>
+				<p class="s-p mt10">提交入网材料审核成功后在1-3个工作日内完成商户所需的产品开通，如超出时间为及时开通，可以进行投诉反馈。 </p>
+				<p class="point c-646464">正式商用：</p>
+				<p class="s-p mt10">联调测试验证并产品开通成功后，将会获得支付+的正式商编和AppSecret，合作商户的技术小伙伴完成正式商编的替换测试AppKey和AppSecret ，验证没有问题即可登录。3个工作日内完成商户所需的产品开通。</p>
+			</div>
+			<div class="section" id="pt-3">
+				<h4>对接准备</h4>
+				<p class="point">如果您已经是支付+的合作客户，对接完成，<br>请登录商户后台：<a href="">https://plus.yeepay.com/pp-portal-app/login/to_login</a>；</p>
+				<p class="point">如果您是未入网的企业商户，可以与支付+商务联系，电话：010-57073793，<br>电邮：<a href="">ppsupport@yeepay.com</a>；</p>
+				<p class="point">如果您是准备或正在进行技术对接的商户，请确认入网准备资料，<br>申请材料准备参见：<a href="">支付资质申请指南</a>。</p>
+			</div>
+			<div class="section" id="pt-4">
+				<h4>接入SDK步骤</h4>
+				<p class="point">分别下载 服务端 SDK （链接SDK下载地址），客户端SDK陆续发布中；</p>
+				<p class="point">安装部署服务端 SDK ，使用服务端 SDK 请求交易对象；<br>环境建议: 通常JAVA要求 JDK 版本 1.6 及以上。 </p>
+				<p class="point">对接过程，若商户没有正式商编，将采取测试商编和测试Appkey进行验证调试，<br>若已有正式商编，可以进行替换。</p>
+			</div>
+			<div class="section" id="pt-5">
+				<h4>在线调试</h4>
+				<p>调试地址：<a href="">请点击查看</a></p>
+				<p class="c-646464">如果您想了解支付+系统入网及更多，可以联系我们的商务合作小伙伴！</p>
+				<p><a href="mailto:ppsupport@yeepay.com">ppsupport@yeepay.com</a></p>
+				<p class="c-646464">微信公众号：</p>
+				<div class="section-img">
+					<img src="images/ewm.png">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--footer-->
+<div class="footer">
+	<p>© 2003-2016  易宝支付有限公司版权所有</p>
+	<p>京ICP证030831号  京ICP备08100193号-1  京公网安备11010502007599号</p>
+	<p>7*24小时客服热线：4001-500-800    客服/投诉中心地址：石景山区鲁谷路74号瑞达大厦16层</p>
+</div>
+<script type="text/javascript" src="js/power-slider.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
