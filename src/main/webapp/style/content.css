@@ -98,7 +98,6 @@
 .menu-nav a span{
     float: right;
     margin-right: 5px;
-    font-size: 14px;
     color: #5A80DC;
 }
 .menu-nav a:hover{
@@ -629,4 +628,45 @@
 }
 .section-img{
     margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+    body{
+        font-size: 16px;
+    }
+    .logo{
+        font-size: 22px;
+    }
+    .login-btn , .block-text p , .faq-list li , .download h4 , .about-us h4 , .section h4{
+        font-size: 18px;
+    }
+    .footer p , .hot-q li a , .section .s-p{
+        font-size: 14px;
+    }
+    .title , .content-title{
+        font-size: 26px;
+    }
+    .product-list li h4 , .faq-list li h4 , .question-list-child h4 , .download-mode , .guide-nav p a{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    body{
+        font-size: 18px;
+    }
+    .logo{
+        font-size: 24px;
+    }
+    .login-btn , .block-text p , .faq-list li , .download h4 , .about-us h4 , .section h4{
+        font-size: 20px;
+    }
+    .footer p , .hot-q li a , .section .s-p{
+        font-size: 16px;
+    }
+    .title , .content-title{
+        font-size: 28px;
+    }
+    .product-list li h4 , .faq-list li h4 , .question-list-child h4 , .download-mode , .guide-nav p a{
+        font-size: 22px;
+    }
 }
