@@ -1,26 +1,42 @@
-/*header*/
+/*****************header******************/
 .header{
+    width: 100%;
+    background: #658ff5;
+}
+.header .head-bg{
+    display: none;
+}
+.header .head{
+    width: 1000px;
+    margin: 0 auto;
+}
+.index-header{
     position: relative;
     z-index: 100;
 }
-.head-bg , .head{
+.index-header .head-bg , .index-header .head{
     position: absolute;
     top: 0;
     height: 60px;
     z-index: 100;
 }
-.head-bg{
+.index-header .head-bg{
     left: 0;
     width: 100%;
     background: #658ff5;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
 }
-.head{
+.index-header .head{
     left: 50%;
     width: 1000px;
     margin-left: -500px;
 }
 .logo{
     float: left;
+    font-size: 20px;
+    line-height: 60px;
+    color: #fff;
 }
 .login-btn{
     float: right;
@@ -49,10 +65,14 @@
     height: 58px;
     padding: 0 15px;
     line-height: 60px;
-    color: rgba(255,255,255,0.50);
+    color: #fff;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
 }
 .nav-child-a.active , .nav-child-a.mouseover{
     color: #fff;
+    opacity: 1;
+    filter: alpha(opacity=100);
     background: transparent;
     background-color: rgba(0,0,0,0.10);
     border-bottom: 2px solid #ff3062;
@@ -70,7 +90,9 @@
     height: 34px;
     line-height: 34px;
     padding-left: 15px;
-    color: rgba(255,255,255,0.50);
+    color: #fff;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
     background: #5A80DC;
 }
 .menu-nav a span{
@@ -81,17 +103,53 @@
 }
 .menu-nav a:hover{
     color: #fff;
+    opacity: 1;
+    filter: alpha(opacity=100);
     background: #658FF5;
 }
 .menu-nav a:hover span{
     color: #fff;
 }
-/*header-index*/
-.index{
-    opacity: 0.6;
-    filter: alpha(opacity=60);
+/*****************footer******************/
+.footer{
+    height: 110px;
+    text-align: center;
+    background: #658FF5;
 }
-
+.footer p{
+    font-size: 12px;
+    color: #fff;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.footer p:first-child{
+    padding: 25px 0 20px;
+}
+/*****************common-block******************/
+.banner{
+    margin-top: 30px;
+}
+.main{
+    width: 900px;
+    min-height: 650px;
+    margin-top: 20px;
+    padding: 15px 50px 0;
+    background: #fff;
+    overflow: hidden;
+}
+.main h2 , .main h3 , .main h4{
+    color: #212121;
+}
+.main p{
+    color: #909090;
+}
+.main p a{
+    color: #658FF5;
+}
+.main p a:hover{
+    color: #5072c4;
+}
+/*****************index******************/
 /*carousel*/
 .slider{
     position: relative;
@@ -160,11 +218,11 @@
     line-height: 24px;
     font-size: 24px;
     color: #658FF5;
-    border-left: 1px solid #ff3062;
+    border-left: 2px solid #ff3062;
 }
 .block-text p{
     width: 680px;
-    padding-left: 11px;
+    padding-left: 12px;
     text-align: justify;
     line-height: 24px;
     font-size: 16px;
@@ -183,10 +241,10 @@
     background: #fff url("../images/block-white-bg2.png") no-repeat left center;
 }
 .blue.bg1{
-    background: #F5FAFF url("../images/block-blue-bg1.png") no-repeat right center;
+    background: #ededed url("../images/block-blue-bg1.png") no-repeat right center;
 }
 .blue.bg2{
-    background: #F5FAFF url("../images/block-blue-bg2.png") no-repeat right center;
+    background: #ededed url("../images/block-blue-bg2.png") no-repeat right center;
 }
 
 .horn{
@@ -202,7 +260,7 @@
     color: #fff;
 }
 .blue .horn{
-    color: #F5FAFF;
+    color: #ededed;
 }
 
 /*product*/
@@ -246,16 +304,329 @@
     line-height: 20px;
     color: #979797;
 }
-/*footer*/
-.footer{
-    height: 110px;
-    text-align: center;
-    background: #4763aa;
+
+/*****************帮助中心******************/
+.content-title{
+    padding: 15px 0;
+    font-size: 24px;
+    border-bottom: 2px dotted #ccc;
 }
-.footer p{
+.faq-list{
+    width: 100%;
+    overflow: hidden;
+}
+.faq-list ul{
+    width: 980px;
+    overflow: hidden;
+}
+.faq-list li{
+    position: relative;
+    float: left;
+    width: 382px;
+    margin: 30px 80px 0 0;
+    padding: 0 0 30px 28px;
+    font-size: 16px;
+}
+.faq-list li h4{
+    margin-bottom: 5px;
+    line-height: 18px;
+    font-size: 18px;
+}
+.faq-list li p{
+    margin-top: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.faq-list li p a{
+    color: #646464;
+}
+.faq-list li p a:hover{
+    color: #212121;
+}
+.faq-list li .more{
+    display: inline-block;
+    margin-top: 25px;
+    color: #658FF5;
+}
+.faq-list li .more:hover{
+    color: #5072c4;
+}
+.faq-list li .icon{
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 16px;
+    height: 16px;
+    background: url("../images/faq-list-icon.png") no-repeat;
+}
+.faq-list li .bg1{
+    background-position: 0 0;
+}
+.faq-list li .bg2{
+    background-position: -16px 0;
+}
+.faq-list li .bg3{
+    background-position: -32px 0;
+}
+/*********************帮助中心-列表//详情***********************/
+.crumbs-nav{
+    padding-top: 15px;
+    color: #658FF5;
+}
+.crumbs-nav a{
+    color: #658FF5;
+}
+.crumbs-nav a:hover{
+    color: #5072c4;
+}
+.crumbs-nav span{
+    padding: 0 5px;
+}
+.question{
+    margin-top: 15px;
+    overflow: hidden;
+}
+.question-list{
+    float: left;
+    width: 610px;
+    padding-bottom: 10px;
+}
+.question-list-child{
+
+}
+.question-list-child h4{
+    padding: 15px 0 15px 30px;
+    line-height: 18px;
+    font-size: 18px;
+    background: url("../images/message-b.png") no-repeat left center;
+    border-bottom: 1px dotted #ccc;
+}
+.question-list-child h4 a{
+    color: #212121;
+}
+.question-list-child h4 a:hover{
+    color: #658FF5;
+}
+.answer{
+    padding: 15px 15px 15px 30px;
+}
+.answer p{
+    position: relative;
+    line-height: 24px;
+    text-align: justify;
+}
+/*.answer p:after{
+    content:"...";
+    font-weight:bold;
+    position:absolute;
+    bottom:0;
+    right:0;
+    width: 28px;
+    height: 24px;
+    background: #fff;
+}*/
+.hot-q{
+    float: right;
+    width: 218px;
+    margin-top: 48px;
+    padding: 5px 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.hot-q h4{
+    padding: 15px 0 15px 22px;
+    line-height: 16px;
+    background: url("../images/hot-q-h4.png") no-repeat left center;
+    border-bottom: 1px solid #ccc;
+}
+.hot-q ul{
+    overflow: hidden;
+}
+.hot-q li{
+    margin-top: -1px;
+    height: 42px;
+    padding-left: 20px;
+    line-height: 42px;
+    border-top: 1px dotted #ccc;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #658FF5;
+    background: url("../images/hot-q-icon.png") no-repeat left center;
+}
+.hot-q li a{
     font-size: 12px;
-    color: #9eaed3;
+    color: #658FF5;
 }
-.footer p:first-child{
-    padding: 25px 0 20px;
+.hot-q li a:hover{
+    color: #5072c4;
+}
+.email{
+    color: #658FF5;
+    text-decoration: underline;
+}
+.email:hover{
+    color: #5072c4;
+}
+/*********************SDK下载***********************/
+.download{
+    width: 100%;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.download h4{
+    padding-top: 30px;
+    font-size: 18px;
+    color: #646464;
+}
+.download-list{
+    width: 920px;
+    overflow: hidden;
+}
+.download-list li{
+    float: left;
+    width: 168px;
+    height: 258px;
+    margin: 20px 20px 0 0;
+    padding: 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.language-icon{
+    height: 190px;
+    border-bottom: 1px dotted #ccc;
+}
+.language-icon.bg-j{
+    background: url("../images/download-icon-j.png") no-repeat center;
+}
+.language-icon.bg-p{
+    background: url("../images/download-icon-p.png") no-repeat center;
+}
+.language-icon.bg-n{
+    background: url("../images/download-icon-n.png") no-repeat center;
+}
+.language-icon.bg-py{
+    background: url("../images/download-icon-py.png") no-repeat center;
+}
+.language-icon.bg-d{
+    background: url("../images/download-icon-d.png") no-repeat center;
+}
+.language-icon.bg-q{
+    background: url("../images/download-icon-q.png") no-repeat center;
+}
+.download-mode{
+    height: 20px;
+    padding-top: 25px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 18px;
+    color: #646464;
+}
+.download-mode a{
+    color: #658FF5;
+}
+.download-mode a:hover{
+    color: #5072c4;
+}
+.download-mode span{
+    padding: 0 10px;
+    color: #909090;
+}
+.download-box{
+    width: 920px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+.download-box .download{
+    float: left;
+    width: 210px;
+    margin-right: 20px;
+}
+/*********************关于我们***********************/
+.about-us{
+    padding: 20px 100px 0;
+}
+.about-us h4{
+    font-size: 16px;
+    color: #658FF5;
+}
+.about-us p{
+    margin-top: 20px;
+    line-height: 24px;
+}
+.photo{
+    margin-top: 40px;
+    text-align: center;
+}
+/************************接入指南****************************/
+.guide{
+    overflow: hidden;
+}
+.guide-nav{
+    float: left;
+    width: 160px;
+}
+.guide-nav p{
+    margin-top: 15px;
+    line-height: 20px;
+}
+.guide-nav p:first-child{
+    margin-top: 20px;
+}
+.guide-nav p a{
+    font-size: 18px;
+    color: #646464;
+}
+.guide-nav p span{
+    float: right;
+    width: 10px;
+    height: 12px;
+    margin: 4px 10px 0 0;
+}
+.guide-nav p:hover a{
+    color: #658FF5;
+}
+.guide-nav p:hover span{
+    background: url("../images/guide-nav-icon.png") no-repeat;
+}
+.guide-content{
+    float: right;
+    width: 665px;
+    margin-top: 58px;
+}
+.section{
+    padding: 20px 0;
+    border-top: 2px dotted #ccc;
+}
+.section h4{
+    font-size: 16px;
+    color: #658FF5;
+}
+.section p{
+    margin-top: 20px;
+    line-height: 24px;
+}
+.section .point{
+    padding-left: 25px;
+    background: url("../images/point.png") no-repeat left 9px;
+}
+.section .c-646464{
+    color: #646464;
+}
+.section .s-p{
+    margin-top: 0;
+    padding-left: 25px;
+    font-size: 12px;
+}
+.section .s-p.mt10{
+    margin-top: 10px;
+}
+.section .s-p .bf:before{
+    content: "需要五个字";
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.section-img{
+    margin-top: 20px;
 }
