@@ -219,6 +219,11 @@
     color: #658FF5;
     border-left: 2px solid #ff3062;
 }
+.title-o{
+    padding-left: 0;
+    text-align: center;
+    border: 0;
+}
 .block-text p{
     width: 680px;
     padding-left: 12px;
@@ -307,7 +312,8 @@
 /*****************帮助中心******************/
 .content-title{
     padding: 15px 0;
-    font-size: 24px;
+    line-height: 20px;
+    font-size: 20px;
     border-bottom: 2px dotted #ccc;
 }
 .faq-list{
@@ -574,7 +580,7 @@
     margin-top: 20px;
 }
 .guide-nav p a{
-    font-size: 18px;
+    font-size: 16px;
     color: #646464;
 }
 .guide-nav p span{
@@ -592,7 +598,7 @@
 .guide-content{
     float: right;
     width: 665px;
-    margin-top: 58px;
+    margin-top: 50px;
 }
 .section{
     padding: 20px 0;
@@ -616,7 +622,7 @@
 .section .s-p{
     margin-top: 0;
     padding-left: 25px;
-    font-size: 12px;
+    font-size: 14px;
 }
 .section .s-p.mt10{
     margin-top: 10px;
