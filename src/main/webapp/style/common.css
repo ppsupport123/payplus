@@ -19,7 +19,7 @@ h1 , h2 , h3 , h4{
 body{
     max-width: 1920px;
     margin: 0 auto;
-    font-family: "Microsoft YaHei" , SimSun , Arial;
+    font-family: pinghei , "Microsoft YaHei" , 'Open Sans', "Hiragino Sans GB" , "Hiragino Sans GB W3" , SimSun , Arial , sans-serif;
     font-size: 14px;
 }
 .clear:after{
